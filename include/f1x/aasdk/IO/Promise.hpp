@@ -49,6 +49,7 @@ public:
     {
         return std::make_shared<Promise>(strand);
     }
+}
 
     Promise(boost::asio::io_service& ioService)
         : ioContextWrapper_(ioService)
@@ -130,6 +131,7 @@ public:
     {
         return std::make_shared<Promise>(strand);
     }
+}
 
     Promise(boost::asio::io_service& ioService)
         : ioContextWrapper_(ioService)
